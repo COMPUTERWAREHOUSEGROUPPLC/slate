@@ -835,7 +835,7 @@
 </span></code></pre><h1 id='oauth2-token-api'>Oauth2 Token API</h1>
 <p>Description: This is where authorized agents request for access token to make use of the CWG vending API.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p>Method : POST
+<p><code>POST https://41.78.157.169:8084/api/auth/oauth2/token&lt;ID&gt;</code>
 Security : Basic Authentication (Client id and client secret will provided)</p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <p>https://41.78.157.169:8084/api/auth/oauth2/token</p>
@@ -903,8 +903,7 @@ Security : Basic Authentication (Client id and client secret will provided)</p>
 </span><span class="p">]</span><span class="w">
 </span></code></pre><h1 id='view-agent-subscription-list-api'>View Agent Subscription List Api</h1><h3 id='http-request-2'>HTTP Request</h3>
 <p>Description: This is where authorized agents get all subscribed services.
-Method: GET.
-Security: Bearer Token.</p>
+<code>GET https://41.78.157.169:8084/api/platform/vend/query/subscription</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <p>https://41.78.157.169:8084/api/platform/vend/query/subscription</p>
 
@@ -986,7 +985,7 @@ Security: Bearer Token.</p>
 </span><span class="p">]</span><span class="w">
 </span></code></pre><h1 id='vend-api'>Vend Api</h1><h3 id='http-request-3'>HTTP Request</h3>
 <p>Description: This is where users vend transactions.
-Method: POST.
+<code>POST https://41.78.157.169:8084/api/platform/vend</code>
 Security: Bearer Token.</p>
 <h3 id='url-parameters-3'>URL PARAMETERS</h3>
 <p>https://41.78.157.169:8084/api/platform/vend</p>
@@ -1117,7 +1116,7 @@ POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c
 
 </code></pre><h1 id='vend-query-api'>Vend Query Api</h1><h3 id='http-request-4'>HTTP Request</h3>
 <p>Description: This is to query the status of vend transactions.
-Method: POST.
+<code>POST https://41.78.157.169:8084/api/platform/vend/query</code>
 Security: Bearer Token.</p>
 <h3 id='url-parameters-4'>URL Parameters</h3>
 <p>https://41.78.157.169:8084/api/platform/vend/query</p>
@@ -1249,7 +1248,7 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 </tr>
 <tr>
 <td>106</td>
-<td>I&#39;m a teapot.</td>
+<td>Invalid Date Format Please consult documentation for the correct format</td>
 </tr>
 <tr>
 <td>107</td>
