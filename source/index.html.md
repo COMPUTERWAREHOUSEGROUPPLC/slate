@@ -51,18 +51,10 @@ M302| MTN| Data | YES| 50MB | ₦100 - 50MB (valid for 24hrs)
  | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
  | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
 
- # Sample payload for airtime 
-```json
-{ "transactionReference": "12221t8TOO095", 
-"amountPaid": 10000, 
-"transactionHash": "37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a78", 
-"customerUserId": "08030075922", 
-"transactionDate": "08/02/2018 05:00:09", 
-"vendingCode": "M301" }
-```
 
 
-# Authentication
+
+# Sample payload for airtime 
 
 
 
