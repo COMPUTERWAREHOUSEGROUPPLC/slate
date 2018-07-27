@@ -130,14 +130,16 @@ Security : Basic Authentication (Client id and client secret will provided)
 https://41.78.157.169:8084/api/auth/oauth2/token
 
 ### Resource Information
-Response formats | JSON
+
 -------------- | -------------- 
+Response formats | JSON
 Request formats | JSON
 Requires Authentication? | Yes
 Rate Limited? | Yes
 
 ### Parameters
 Name | Required/optional | Description | Default value | Example
+-------------- | -------------- | -------------- | -------------- | --------------
 clientId | Required | Username|  | BnpS_FXkc5mTTVoY9Ze4VIoH7b80z57RY78RQ
 clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 
@@ -151,8 +153,82 @@ clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 ```json
 [
   {
-    "access_token": "c7a13918-f56c-4b7f-a4c1-4ed28cbc9497", "token_type": "bearer", "expires_in": 33788, "scope": "AGENT" }
+    "access_token": "c7a13918-f56c-4b7f-a4c1-4ed28cbc9497", "token_type": "bearer", "expires_in": 33788, "scope": "AGENT" 
+    }
 
 ]
+
+
 ```
 
+## View Agent Subscription List Api
+### HTTP Request
+Description: This is where authorized agents get all subscribed services.
+Method: GET.
+Security: Bearer Token.
+
+### URL Parameters
+https://41.78.157.169:8084/api/platform/vend/query/subscription
+
+-------------- | -------------- 
+Response formats | JSON
+Request formats | JSON
+Requires Authentication? | Yes
+Rate Limited? | Yes
+
+### Sample Request
+GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949
+
+> Sample Response
+```json
+[
+  { "statusCode": 200, 
+  "requestSuccessful": true, 
+  "executionTime": 0, 
+  "apiErrors": { 
+    "errorCount": 0, 
+    "apiErrorList": [] 
+    }, 
+    "apiWarnings": { 
+      "warningCount": 0, 
+      "apiWarningList": [] 
+      }, "requestedCommand": "/vend/query/subscription", "responseEntity": { 
+        "headers": {}, 
+        "body": { 
+          "serviceCount": 6, 
+          "subscribedServices": [ { 
+            "name": "Mtn Etop up", 
+            "vendCode": "MTN_A", 
+            "usesPreset": false, 
+            "presetAmountList": [], 
+            "presetCount": 0 },
+
+            { "name": null, 
+            "vendCode": "MTN_D", 
+            "usesPreset": true, 
+            "presetAmountList": [ 
+              { 
+                "subCode": "10GB", 
+                "description": "10Gb MTN",
+                 "amount": 1000 } ], 
+                 "presetCount": 1 }, 
+                 { "name": null, 
+                 "vendCode": "NIN_A", 
+                 "usesPreset": false, "presetAmountList": [], 
+                 "presetCount": 0 }, 
+                 { 
+                   "name": "Glo Edata", 
+                   "vendCode": "GLO_D", 
+                   "usesPreset": false, "presetAmountList": [], "presetCount": 0 
+                   }, 
+                   { "name": null, "vendCode": "GLO_A", "usesPreset": false, "presetAmountList": [], "presetCount": 0 }, 
+                   { "name": null, 
+                   "vendCode": "NIN_D", 
+                   "usesPreset": false, "presetAmountList": [], "presetCount": 0 }
+                   ] 
+                   }, 
+                   "statusCode": "OK", "statusCodeValue": 200 
+                   } 
+                   }
+
+]
