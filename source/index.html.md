@@ -27,6 +27,20 @@ This document contains the Steps to be taken for an Agent to be on-boarded on th
 3. Submit the filled Agent Registration form.
 4. An email containing the Client ID and Client Secret will be sent to the Contact email address specified in the Agent Registration form.
 
+
+
+
+#Agent Subscription List
+Vend Code | Network Provider | Recharge Type | sub code required    | Sub Codes | Description
+-------------- | -------------- | -------------- | --------------   | -------------- | --------------
+M301 | MTN | Airtime | No | - | -
+M302| MTN| Data | YES| 50MB | ₦100 - 50MB (valid for 24hrs)
+Row 3 col 1 | Row 3 col 2 | Row  3 col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
+Row 4 col 1 | Row 4 col 2 | Row 4 col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
+Row 5 col 1 | Row 5 col 2 | Row 5 col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
+Row 6 col 1 | Row 6 col 2 | Row  col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
+
+
 # Authentication
 
 > To authorize, use this code:
