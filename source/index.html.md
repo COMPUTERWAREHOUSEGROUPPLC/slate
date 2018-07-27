@@ -140,16 +140,11 @@ Name | Required/optional | Description | Default value | Example
 clientId | Required | Username|  | BnpS_FXkc5mTTVoY9Ze4VIoH7b80z57RY78RQ
 clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 
+### Sample Request
 
-> Sample Request
 
-```json
-[
-  {
     POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name="grant_type" grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--
-}
-]
-```
+
 
 > Sample Response
 ```json
