@@ -248,8 +248,19 @@
                   <li>
                     <a href="#sample-request" class="toc-h2 toc-link" data-title="Sample Request">Sample Request</a>
                   </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#view-agent-subscription-list-api" class="toc-h1 toc-link" data-title="View Agent Subscription List Api">View Agent Subscription List Api</a>
+              <ul class="toc-list-h2">
                   <li>
-                    <a href="#view-agent-subscription-list-api" class="toc-h2 toc-link" data-title="View Agent Subscription List Api">View Agent Subscription List Api</a>
+                    <a href="#http-request-2" class="toc-h2 toc-link" data-title="HTTP Request">HTTP Request</a>
+                  </li>
+                  <li>
+                    <a href="#url-parameters-2" class="toc-h2 toc-link" data-title="URL Parameters">URL Parameters</a>
+                  </li>
+                  <li>
+                    <a href="#sample-request-2" class="toc-h2 toc-link" data-title="Sample Request">Sample Request</a>
                   </li>
               </ul>
           </li>
@@ -795,11 +806,19 @@ Security : Basic Authentication (Client id and client secret will provided)</p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <p>https://41.78.157.169:8084/api/auth/oauth2/token</p>
 <h3 id='resource-information'>Resource Information</h3>
-<p>-------------- | -------------- 
-Response formats | JSON
-Request formats | JSON
-Requires Authentication? | Yes
-Rate Limited? | Yes</p>
+<table><thead>
+<tr>
+</tr>
+</thead><tbody>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+</tbody></table>
 <h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -829,88 +848,93 @@ Rate Limited? | Yes</p>
 <p>POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name=&quot;grant_type&quot; grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--</p>
 
 <blockquote>
-<p>Sample Response
-<code>json
-[
-  { &quot;transactionReference&quot;: &quot;12221t8TOO096&quot;, &quot;amountPaid&quot;: 10000, 
-  &quot;transactionHash&quot;: &quot;37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a79&quot;, 
-  &quot;customerUserId&quot;: &quot;08030075922&quot;, 
-  &quot;transactionDate&quot;: &quot;08/02/2018 05:00:19&quot;, &quot;vendingCode&quot;: &quot;M302&quot; &quot;subCode&quot;:&quot;22GB&quot;
-  }
-]
-</code></p>
+<p>Sample Response</p>
 </blockquote>
-<h2 id='view-agent-subscription-list-api'>View Agent Subscription List Api</h2><h3 id='http-request-2'>HTTP Request</h3>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w"> </span><span class="s2">"transactionReference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12221t8TOO096"</span><span class="p">,</span><span class="w"> </span><span class="s2">"amountPaid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a79"</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"customerUserId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08030075922"</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"transactionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08/02/2018 05:00:19"</span><span class="p">,</span><span class="w"> </span><span class="s2">"vendingCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M302"</span><span class="w"> </span><span class="s2">"subCode"</span><span class="p">:</span><span class="s2">"22GB"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre><h1 id='view-agent-subscription-list-api'>View Agent Subscription List Api</h1><h3 id='http-request-2'>HTTP Request</h3>
 <p>Description: This is where authorized agents get all subscribed services.
 Method: GET.
 Security: Bearer Token.</p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <p>https://41.78.157.169:8084/api/platform/vend/query/subscription</p>
 
-<p>-------------- | -------------- 
-Response formats | JSON
-Request formats | JSON
-Requires Authentication? | Yes
-Rate Limited? | Yes</p>
+<table><thead>
+<tr>
+</tr>
+</thead><tbody>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+</tbody></table>
 <h3 id='sample-request-2'>Sample Request</h3>
 <p>GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949</p>
 
 <blockquote>
-<p>Sample Response
-```json
-[
-  { &quot;statusCode&quot;: 200, 
-  &quot;requestSuccessful&quot;: true, 
-  &quot;executionTime&quot;: 0, 
-  &quot;apiErrors&quot;: { 
-    &quot;errorCount&quot;: 0, 
-    &quot;apiErrorList&quot;: [] 
-    }, 
-    &quot;apiWarnings&quot;: { 
-      &quot;warningCount&quot;: 0, 
-      &quot;apiWarningList&quot;: [] 
-      }, &quot;requestedCommand&quot;: &quot;/vend/query/subscription&quot;, &quot;responseEntity&quot;: { 
-        &quot;headers&quot;: {}, 
-        &quot;body&quot;: { 
-          &quot;serviceCount&quot;: 6, 
-          &quot;subscribedServices&quot;: [ { 
-            &quot;name&quot;: &quot;Mtn Etop up&quot;, 
-            &quot;vendCode&quot;: &quot;MTN_A&quot;, 
-            &quot;usesPreset&quot;: false, 
-            &quot;presetAmountList&quot;: [], 
-            &quot;presetCount&quot;: 0 },</p>
+<p>Sample Response</p>
 </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w"> </span><span class="s2">"statusCode"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"requestSuccessful"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"executionTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"apiErrors"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+    </span><span class="s2">"errorCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"apiErrorList"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> 
+    </span><span class="p">},</span><span class="w"> 
+    </span><span class="s2">"apiWarnings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+      </span><span class="s2">"warningCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> 
+      </span><span class="s2">"apiWarningList"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> 
+      </span><span class="p">},</span><span class="w"> </span><span class="s2">"requestedCommand"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/vend/query/subscription"</span><span class="p">,</span><span class="w"> </span><span class="s2">"responseEntity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+        </span><span class="s2">"headers"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w"> 
+        </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+          </span><span class="s2">"serviceCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> 
+          </span><span class="s2">"subscribedServices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mtn Etop up"</span><span class="p">,</span><span class="w"> 
+            </span><span class="s2">"vendCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MTN_A"</span><span class="p">,</span><span class="w"> 
+            </span><span class="s2">"usesPreset"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> 
+            </span><span class="s2">"presetAmountList"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> 
+            </span><span class="s2">"presetCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">},</span><span class="w">
 
-<p>{ &quot;name&quot;: null, 
-            &quot;vendCode&quot;: &quot;MTN_D&quot;, 
-            &quot;usesPreset&quot;: true, 
-            &quot;presetAmountList&quot;: [ 
-              { 
-                &quot;subCode&quot;: &quot;10GB&quot;, 
-                &quot;description&quot;: &quot;10Gb MTN&quot;,
-                 &quot;amount&quot;: 1000 } ], 
-                 &quot;presetCount&quot;: 1 }, 
-                 { &quot;name&quot;: null, 
-                 &quot;vendCode&quot;: &quot;NIN_A&quot;, 
-                 &quot;usesPreset&quot;: false, &quot;presetAmountList&quot;: [], 
-                 &quot;presetCount&quot;: 0 }, 
-                 { 
-                   &quot;name&quot;: &quot;Glo Edata&quot;, 
-                   &quot;vendCode&quot;: &quot;GLO_D&quot;, 
-                   &quot;usesPreset&quot;: false, &quot;presetAmountList&quot;: [], &quot;presetCount&quot;: 0 
-                   }, 
-                   { &quot;name&quot;: null, &quot;vendCode&quot;: &quot;GLO_A&quot;, &quot;usesPreset&quot;: false, &quot;presetAmountList&quot;: [], &quot;presetCount&quot;: 0 }, 
-                   { &quot;name&quot;: null, 
-                   &quot;vendCode&quot;: &quot;NIN_D&quot;, 
-                   &quot;usesPreset&quot;: false, &quot;presetAmountList&quot;: [], &quot;presetCount&quot;: 0 }
-                   ] 
-                   }, 
-                   &quot;statusCode&quot;: &quot;OK&quot;, &quot;statusCodeValue&quot;: 200 
-                   } 
-                   }</p>
+            </span><span class="p">{</span><span class="w"> </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> 
+            </span><span class="s2">"vendCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MTN_D"</span><span class="p">,</span><span class="w"> 
+            </span><span class="s2">"usesPreset"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> 
+            </span><span class="s2">"presetAmountList"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> 
+              </span><span class="p">{</span><span class="w"> 
+                </span><span class="s2">"subCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10GB"</span><span class="p">,</span><span class="w"> 
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10Gb MTN"</span><span class="p">,</span><span class="w">
+                 </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w"> 
+                 </span><span class="s2">"presetCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">},</span><span class="w"> 
+                 </span><span class="p">{</span><span class="w"> </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> 
+                 </span><span class="s2">"vendCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NIN_A"</span><span class="p">,</span><span class="w"> 
+                 </span><span class="s2">"usesPreset"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s2">"presetAmountList"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> 
+                 </span><span class="s2">"presetCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">},</span><span class="w"> 
+                 </span><span class="p">{</span><span class="w"> 
+                   </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Glo Edata"</span><span class="p">,</span><span class="w"> 
+                   </span><span class="s2">"vendCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GLO_D"</span><span class="p">,</span><span class="w"> 
+                   </span><span class="s2">"usesPreset"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s2">"presetAmountList"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="s2">"presetCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> 
+                   </span><span class="p">},</span><span class="w"> 
+                   </span><span class="p">{</span><span class="w"> </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s2">"vendCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GLO_A"</span><span class="p">,</span><span class="w"> </span><span class="s2">"usesPreset"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s2">"presetAmountList"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="s2">"presetCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">},</span><span class="w"> 
+                   </span><span class="p">{</span><span class="w"> </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> 
+                   </span><span class="s2">"vendCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NIN_D"</span><span class="p">,</span><span class="w"> 
+                   </span><span class="s2">"usesPreset"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s2">"presetAmountList"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w"> </span><span class="s2">"presetCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span><span class="w">
+                   </span><span class="p">]</span><span class="w"> 
+                   </span><span class="p">},</span><span class="w"> 
+                   </span><span class="s2">"statusCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w"> </span><span class="s2">"statusCodeValue"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="w"> 
+                   </span><span class="p">}</span><span class="w"> 
+                   </span><span class="p">}</span><span class="w">
 
-<p>]</p>
-<h1 id='errors'>Errors</h1>
+</span><span class="p">]</span><span class="w">
+</span></code></pre><h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
