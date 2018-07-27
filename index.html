@@ -773,6 +773,7 @@
   </span><span class="s2">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a79"</span><span class="p">,</span><span class="w"> 
   </span><span class="s2">"customerUserId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08030075922"</span><span class="p">,</span><span class="w"> 
   </span><span class="s2">"transactionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08/02/2018 05:00:19"</span><span class="p">,</span><span class="w"> </span><span class="s2">"vendingCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M302"</span><span class="w"> </span><span class="s2">"subCode"</span><span class="p">:</span><span class="s2">"22GB"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre><h1 id='oauth2-token-api'>Oauth2 Token API</h1>
 <p>Description: This is where authorized agents request for access token to make use of the CWG vending API.</p>
@@ -781,7 +782,16 @@
 Security : Basic Authentication (Client id and client secret will provided)</p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <p>https://41.78.157.169:8084/api/auth/oauth2/token</p>
-<h1 id='errors'>Errors</h1>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="err">POST</span><span class="w"> </span><span class="err">/api/auth/uaa/api/oauth</span><span class="mi">2</span><span class="err">/token</span><span class="w"> </span><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="err">Host</span><span class="p">:</span><span class="w"> </span><span class="mf">192.168</span><span class="err">.</span><span class="mf">16.190</span><span class="p">:</span><span class="mi">8084</span><span class="w"> </span><span class="err">Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">multipart/form-data;</span><span class="w"> </span><span class="err">boundary=----WebKitFormBoundary</span><span class="mi">7</span><span class="err">MA</span><span class="mi">4</span><span class="err">YWxkTrZu</span><span class="mi">0</span><span class="err">gW</span><span class="w"> </span><span class="err">Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Basic</span><span class="w"> </span><span class="err">Qm</span><span class="mi">5</span><span class="err">wU</span><span class="mi">19</span><span class="err">NTENOekpHNks</span><span class="mi">4</span><span class="err">d</span><span class="mi">0</span><span class="err">hub</span><span class="mi">0</span><span class="err">poTlNtZVgxeGZmNXZqeDVudTpCbnBLX</span><span class="mi">1</span><span class="err">gzVk</span><span class="mi">1</span><span class="err">uZm</span><span class="mi">8</span><span class="err">wRkhIV</span><span class="mi">3</span><span class="err">R</span><span class="mi">6</span><span class="err">T</span><span class="mi">00</span><span class="err">xbHFuMmQxdEZFR</span><span class="mi">1</span><span class="err">p</span><span class="mi">5</span><span class="err">UWli</span><span class="w"> </span><span class="err">------WebKitFormBoundary</span><span class="mi">7</span><span class="err">MA</span><span class="mi">4</span><span class="err">YWxkTrZu</span><span class="mi">0</span><span class="err">gW</span><span class="w"> </span><span class="err">Content-Disposition</span><span class="p">:</span><span class="w"> </span><span class="err">form-data;</span><span class="w"> </span><span class="err">name=</span><span class="s2">"grant_type"</span><span class="w"> </span><span class="err">grant_type=client_credentials</span><span class="w"> </span><span class="err">------WebKitFormBoundary</span><span class="mi">7</span><span class="err">MA</span><span class="mi">4</span><span class="err">YWxkTrZu</span><span class="mi">0</span><span class="err">gW--</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre><h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
@@ -791,52 +801,68 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 <table><thead>
 <tr>
 <th>Error Code</th>
-<th>Meaning</th>
+<th>Mapping</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
+<td>000</td>
+<td>Transaction Received successfully</td>
 </tr>
 <tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
+<td>100</td>
+<td>Agent Does Not Exist</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>101</td>
+<td>Invalid Service Code</td>
 </tr>
 <tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
+<td>102</td>
+<td>Transaction Reference Not Found</td>
 </tr>
 <tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+<td>103</td>
+<td>Connection Time Out</td>
 </tr>
 <tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+<td>104</td>
+<td>Unregistered IP Address</td>
 </tr>
 <tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
+<td>105</td>
+<td>A Transaction With The Ref Already Exists</td>
 </tr>
 <tr>
-<td>418</td>
+<td>106</td>
 <td>I&#39;m a teapot.</td>
 </tr>
 <tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td>107</td>
+<td>Invalid Sub Code</td>
 </tr>
 <tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+<td>108</td>
+<td>Invalid Amount Paid</td>
 </tr>
 <tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+<td>109</td>
+<td>Invalid Transaction Hash</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Invalid Request</td>
+</tr>
+<tr>
+<td>999</td>
+<td>System Error</td>
+</tr>
+<tr>
+<td>114</td>
+<td>User Input Error</td>
+</tr>
+<tr>
+<td>116</td>
+<td>Transaction Processing</td>
 </tr>
 </tbody></table>
 
