@@ -269,18 +269,22 @@ clientId, transactionReference, customerUserId, transactionDate Hashing Algorith
 ### Sample request 
 POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
 
+> Sample Response
 
->Sample Request
 ```json
 [
-  {
-    "transactionReference": "12221t8TOO095", "amountPaid": 10000, 
+   {
+    "transactionReference": "12221t8TOO095", 
+    "amountPaid": 10000, 
     "transactionHash": "37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59", 
     "customerUserId": "08011111111", 
-    "transactionDate": "08/02/2018 05:00:09", "vendingCode": "MTN_A"
+    "transactionDate": "08/02/2018 05:00:09", 
+    "vendingCode": "MTN_A"
   }
 ]
+]
 ```
+
 
 
 
