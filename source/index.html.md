@@ -131,6 +131,7 @@ https://41.78.157.169:8084/api/auth/oauth2/token
 
 ### Resource Information
 
+|
 -------------- | -------------- 
 Response formats | JSON
 Request formats | JSON
@@ -150,6 +151,7 @@ clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 
 
 > Sample Response
+
 ```json
 [
   { "transactionReference": "12221t8TOO096", "amountPaid": 10000, 
@@ -160,7 +162,7 @@ clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 ]
 ```
 
-## View Agent Subscription List Api
+# View Agent Subscription List Api
 ### HTTP Request
 Description: This is where authorized agents get all subscribed services.
 Method: GET.
@@ -169,6 +171,7 @@ Security: Bearer Token.
 ### URL Parameters
 https://41.78.157.169:8084/api/platform/vend/query/subscription
 
+|
 -------------- | -------------- 
 Response formats | JSON
 Request formats | JSON
@@ -179,6 +182,7 @@ Rate Limited? | Yes
 GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949
 
 > Sample Response
+
 ```json
 [
   { "statusCode": 200, 
