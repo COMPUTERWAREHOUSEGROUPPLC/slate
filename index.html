@@ -245,6 +245,9 @@
                   <li>
                     <a href="#parameters" class="toc-h2 toc-link" data-title="Parameters">Parameters</a>
                   </li>
+                  <li>
+                    <a href="#sample-request" class="toc-h2 toc-link" data-title="Sample Request">Sample Request</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -797,16 +800,9 @@ Rate Limited? | Yes</p>
 <p>Name | Required/optional | Description | Default value | Example
 clientId | Required | Username|  | BnpS_FXkc5mTTVoY9Ze4VIoH7b80z57RY78RQ
 clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH</p>
+<h3 id='sample-request'>Sample Request</h3>
+<p>POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name=&quot;grant_type&quot; grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--</p>
 
-<blockquote>
-<p>Sample Request</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="err">POST</span><span class="w"> </span><span class="err">/api/auth/uaa/api/oauth</span><span class="mi">2</span><span class="err">/token</span><span class="w"> </span><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="err">Host</span><span class="p">:</span><span class="w"> </span><span class="mf">192.168</span><span class="err">.</span><span class="mf">16.190</span><span class="p">:</span><span class="mi">8084</span><span class="w"> </span><span class="err">Content-Type</span><span class="p">:</span><span class="w"> </span><span class="err">multipart/form-data;</span><span class="w"> </span><span class="err">boundary=----WebKitFormBoundary</span><span class="mi">7</span><span class="err">MA</span><span class="mi">4</span><span class="err">YWxkTrZu</span><span class="mi">0</span><span class="err">gW</span><span class="w"> </span><span class="err">Authorization</span><span class="p">:</span><span class="w"> </span><span class="err">Basic</span><span class="w"> </span><span class="err">Qm</span><span class="mi">5</span><span class="err">wU</span><span class="mi">19</span><span class="err">NTENOekpHNks</span><span class="mi">4</span><span class="err">d</span><span class="mi">0</span><span class="err">hub</span><span class="mi">0</span><span class="err">poTlNtZVgxeGZmNXZqeDVudTpCbnBLX</span><span class="mi">1</span><span class="err">gzVk</span><span class="mi">1</span><span class="err">uZm</span><span class="mi">8</span><span class="err">wRkhIV</span><span class="mi">3</span><span class="err">R</span><span class="mi">6</span><span class="err">T</span><span class="mi">00</span><span class="err">xbHFuMmQxdEZFR</span><span class="mi">1</span><span class="err">p</span><span class="mi">5</span><span class="err">UWli</span><span class="w"> </span><span class="err">------WebKitFormBoundary</span><span class="mi">7</span><span class="err">MA</span><span class="mi">4</span><span class="err">YWxkTrZu</span><span class="mi">0</span><span class="err">gW</span><span class="w"> </span><span class="err">Content-Disposition</span><span class="p">:</span><span class="w"> </span><span class="err">form-data;</span><span class="w"> </span><span class="err">name=</span><span class="s2">"grant_type"</span><span class="w"> </span><span class="err">grant_type=client_credentials</span><span class="w"> </span><span class="err">------WebKitFormBoundary</span><span class="mi">7</span><span class="err">MA</span><span class="mi">4</span><span class="err">YWxkTrZu</span><span class="mi">0</span><span class="err">gW--</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
 <blockquote>
 <p>Sample Response
 ```json
