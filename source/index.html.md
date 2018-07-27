@@ -44,25 +44,6 @@ Row 6 col 1 | Row 6 col 2 | Row  col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
 # Authentication
 
 > To authorize, use this code:
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('bhvkbjndhbchbc')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('hsbvhsbjnvhbsvh')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
-
 ```javascript
 const kittn = require('kittn');
 
@@ -84,26 +65,6 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 # Kittens
 
 ## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
 ```javascript
 const kittn = require('kittn');
 
