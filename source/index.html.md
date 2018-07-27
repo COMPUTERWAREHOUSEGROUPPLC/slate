@@ -269,7 +269,7 @@ clientId, transactionReference, customerUserId, transactionDate Hashing Algorith
 ### Sample request 
 POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
 
-> Sample Response
+> Sample Request
 
 ```json
 [
@@ -282,16 +282,16 @@ POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c
     "vendingCode": "MTN_A"
   }
 ]
-]
+
 ```
 
 
 
-
 > Sample Response
+
 ```json
 [
-  {
+   {
      "statusCode": 200, 
      "requestSuccessful": true, 
      "executionTime": 0, 
@@ -316,8 +316,6 @@ POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c
      "statusCode": "OK", 
      "statusCodeValue": 200 } 
      } 
-     
-
-  
 ]
+
 ```
