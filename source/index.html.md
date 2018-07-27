@@ -152,13 +152,12 @@ clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 > Sample Response
 ```json
 [
-  {
-    "access_token": "c7a13918-f56c-4b7f-a4c1-4ed28cbc9497", "token_type": "bearer", "expires_in": 33788, "scope": "AGENT" 
-    }
-
+  { "transactionReference": "12221t8TOO096", "amountPaid": 10000, 
+  "transactionHash": "37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a79", 
+  "customerUserId": "08030075922", 
+  "transactionDate": "08/02/2018 05:00:19", "vendingCode": "M302" "subCode":"22GB"
+  }
 ]
-
-
 ```
 
 ## View Agent Subscription List Api
