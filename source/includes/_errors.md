@@ -7,16 +7,20 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 The Kittn API uses the following error codes:
 
 
-Error Code | Meaning
+Error Code | Mapping
 ---------- | -------
-400 | Bad Request -- Your request is invalid.
-401 | Unauthorized -- Your API key is wrong.
-403 | Forbidden -- The kitten requested is hidden for administrators only.
-404 | Not Found -- The specified kitten could not be found.
-405 | Method Not Allowed -- You tried to access a kitten with an invalid method.
-406 | Not Acceptable -- You requested a format that isn't json.
-410 | Gone -- The kitten requested has been removed from our servers.
-418 | I'm a teapot.
-429 | Too Many Requests -- You're requesting too many kittens! Slow down!
-500 | Internal Server Error -- We had a problem with our server. Try again later.
-503 | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
+000 | Transaction Received successfully
+ 100| Agent Does Not Exist
+101 | Invalid Service Code
+102 | Transaction Reference Not Found
+103 | Connection Time Out
+104 | Unregistered IP Address
+105 | A Transaction With The Ref Already Exists
+106 | I'm a teapot.
+107 | Invalid Sub Code
+108 | Invalid Amount Paid
+109 | Invalid Transaction Hash
+110|  Invalid Request
+999|  System Error
+114|  User Input Error
+116|  Transaction Processing

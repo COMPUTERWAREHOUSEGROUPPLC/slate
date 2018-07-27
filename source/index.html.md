@@ -115,6 +115,7 @@ N902| 9mobile| Data | Yes|  150MB | ₦200 - 150MB (valid for 7days)
   "transactionHash": "37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a79", 
   "customerUserId": "08030075922", 
   "transactionDate": "08/02/2018 05:00:19", "vendingCode": "M302" "subCode":"22GB"
+  }
 ]
 ```
 #Oauth2 Token API
@@ -127,4 +128,14 @@ Security : Basic Authentication (Client id and client secret will provided)
 
 ### URL Parameters 
 https://41.78.157.169:8084/api/auth/oauth2/token
+
+> Sample Request
+
+```json
+[
+  {
+    POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name="grant_type" grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--
+}
+]
+```
 
