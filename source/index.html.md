@@ -35,19 +35,30 @@ Vend Code | Network Provider | Recharge Type | sub code required    | Sub Codes 
 -------------- | -------------- | -------------- | --------------   | -------------- | --------------
 M301 | MTN | Airtime | No | - | -
 M302| MTN| Data | YES| 50MB | ₦100 - 50MB (valid for 24hrs)
-Row 3 col 1 | Row 3 col 2 | Row  3 col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
-Row 4 col 1 | Row 4 col 2 | Row 4 col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
-Row 5 col 1 | Row 5 col 2 | Row 5 col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
-Row 6 col 1 | Row 6 col 2 | Row  col 3 | Row 1 col 3 | Row 1 col 3 | Row 1 col 3
+ | |  |  | 100MB| ₦200 - 100MB (valid for 24hrs)
+ | | | | 150MB| ₦300 - 150MB (valid for 7 days)
+ | | |  | 750MB| ₦500 - 750MB (valid for 7 days)
+ | | | |  1GB | ₦1,000 - 1GB (valid for 30 days)
+ | | | |  1.5GB | ₦1,200 - 1.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+ | | | |  3GB | ₦2,000 - 3.5GB (valid for 30 days)
+
+ #Sample payload for airtime 
+
 
 
 # Authentication
 
-> To authorize, use this code:
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
+```json
+{ "transactionReference": "12221t8TOO095", "amountPaid": 10000, "transactionHash": "37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a78", "customerUserId": "08030075922", "transactionDate": "08/02/2018 05:00:09", "vendingCode": "M301" }
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
