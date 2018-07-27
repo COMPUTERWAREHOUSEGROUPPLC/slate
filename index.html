@@ -229,15 +229,12 @@
           </li>
           <li>
             <a href="#agent-subscription-list" class="toc-h1 toc-link" data-title="Agent Subscription List">Agent Subscription List</a>
-          </li>
-          <li>
-            <a href="#sample-payload-for-airtime" class="toc-h1 toc-link" data-title="Sample payload for airtime">Sample payload for airtime</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#http-request" class="toc-h2 toc-link" data-title="HTTP Request">HTTP Request</a>
+                  </li>
+                  <li>
+                    <a href="#query-parameters" class="toc-h2 toc-link" data-title="Query Parameters">Query Parameters</a>
                   </li>
                   <li>
                     <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
@@ -340,7 +337,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
+<td>3.5GB</td>
 <td>₦2,000 - 3.5GB (valid for 30 days)</td>
 </tr>
 <tr>
@@ -348,111 +345,427 @@
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>5GB</td>
+<td>₦3,500 - 5GB (valid for 30 days)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>10GB</td>
+<td>₦5,000 - 10GB (valid for 30 days)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>22GB</td>
+<td>₦10,000 - 22GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td>G501</td>
+<td>Globacom</td>
+<td>Airtime</td>
+<td>no</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>G502</td>
+<td>Globacom</td>
+<td>Data</td>
+<td>Yes</td>
+<td>10MB</td>
+<td>₦25 - 10MB (valid for 24hrs)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>15MB</td>
+<td>₦50 - 15MB (valid for 24hrs)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>35MB</td>
+<td>₦100 - 35MB (valid for 24hrs)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>100MB</td>
+<td>₦200 - 100MB (valid for 5 days)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>800MB</td>
+<td>₦500 - 800MB (valid for 10 days)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>1.6GB</td>
+<td>₦1,000 - 1.6GB (valid for 30 days)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>3GB</td>
-<td>₦2,000 - 3.5GB (valid for 30 days)</td>
+<td>3.75GB</td>
+<td>₦2,000 - 3.75GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5GB</td>
+<td>₦2,500 - 5GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6GB</td>
+<td>₦3,000 - 6GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>9.5GB</td>
+<td>₦4,000 - 9.5GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>12GB</td>
+<td>₦5,000 - 12GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>22GB</td>
+<td>₦8,000 - 22GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>50GB</td>
+<td>₦10,000 - 50GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>80GB</td>
+<td>₦15,000 - 80GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>100GB</td>
+<td>₦18,000 - 100GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>120GB</td>
+<td>₦20,000 - 120GB (valid for 30 days)</td>
+</tr>
+<tr>
+<td>A201</td>
+<td>Airtel</td>
+<td>Airtime</td>
+<td>No</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>A202</td>
+<td>Airtel</td>
+<td>Data</td>
+<td>Yes</td>
+<td>10MB</td>
+<td>₦50 - This Data plan gives 10MB + 10% Bonus for N50 valid for 1 day</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>50MB</td>
+<td>₦100 - This Data plan gives 50MB + 10% Bonus for N100 valid for 1 day</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>200MB</td>
+<td>₦200 - This Data plan gives 200MB + 10% Bonus for N200 valid for 3 days</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>350MB</td>
+<td>₦300 - This Data plan gives 350MB + 10% Bonus for N300 valid for 7 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>750MB</td>
+<td>₦500 - This Data plan gives 750MB + 10% Bonus for N500 valid for 14 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>1.5GB</td>
+<td>₦1000 - This Data plan gives 1.5GB + 10% Bonus for N1,000 and access to Social Networks for FREE valid for 30 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>3.5GB</td>
+<td>₦2000 - This Data plan gives 3.5GB + 10% Bonus for N2,000 and access to Social Networks for FREE valid for 30 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>5GB</td>
+<td>₦2500 - This Data plan gives 5GB + 10% Bonus for N2,500 and access to Social Networks for FREE valid for 30 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>7GB</td>
+<td>₦3500 - This Data plan gives 7GB + 10% Bonus for N3,500 and access to Social Networks for FREE valid for 30 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>9GB</td>
+<td>₦4000 - This Data plan gives 9GB + 10% Bonus for N4,000 and access to Social Networks for FREE valid for 30 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>10GB</td>
+<td>₦5000- This Data plan gives 10GB + 10% Bonus for N5,000 valid for 30 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>16GB</td>
+<td>₦8000 - This Data plan gives you 16GB + 10% Bonus for N8,000 valid for 30 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>22GB</td>
+<td>₦10,000 - This Data plan gives 22GB + 10% Bonus for N10,000 valid for 30 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>30GB</td>
+<td>₦15,000 - This Data plan gives 30GB + 10% Bonus for N15,000 valid for 60 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>50GB</td>
+<td>₦36000 - This Data plan gives you 50GB + 10% Bonus for N36,000 valid for 180 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>100GB</td>
+<td>₦70,000 - This Data plan gives 100GB + 10% Bonus for N70,000 valid for 365 days</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>200GB</td>
+<td>₦136,000 - This Data plan gives 200GB + 10% Bonus</td>
+<td></td>
+</tr>
+<tr>
+<td>N901</td>
+<td>9mobile</td>
+<td>Airtime</td>
+<td>No</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>N902</td>
+<td>9mobile</td>
+<td>Data</td>
+<td>Yes</td>
+<td>150MB</td>
+<td>₦200 - 150MB (valid for 7days)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>1GB</td>
+<td>₦1000 - 1GB (valid for 30days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>1.5GB</td>
+<td>₦1200 - 1.5GB (valid for 30days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>2.5GB</td>
+<td>₦2000 - 2.5GB (valid for 30days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>4GB</td>
+<td>₦3000- 4GB (valid for 30days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>5.5GB</td>
+<td>₦4000 - 5.5GB (valid for 30days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>11.5GB</td>
+<td>₦8000 - 11.5GB (valid for 30days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>15GB</td>
+<td>₦10000 - 15GB (valid for 30days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>27.5GB</td>
+<td>₦18,000 - 27.5GB (valid for 30days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>30GB</td>
+<td>₦27,500 - 30GB (valid for 90days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>60GB</td>
+<td>₦55,000- 60GB (valid for 180days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>100GB</td>
+<td>₦84,992 - 100GB (valid for 100days)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>120GB</td>
+<td>₦110,000 - 120GB (valid for 365days)</td>
+<td></td>
 </tr>
 </tbody></table>
-<h1 id='sample-payload-for-airtime'>Sample payload for airtime</h1>
+
 <blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>Sample payload for airtime </p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+  </span><span class="p">{</span><span class="w"> </span><span class="s2">"transactionReference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12221t8TOO095"</span><span class="p">,</span><span class="w"> </span><span class="s2">"amountPaid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a78"</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"customerUserId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08030075922"</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"transactionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08/02/2018 05:00:09"</span><span class="p">,</span><span class="w"> </span><span class="s2">"vendingCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M301"</span><span class="w"> </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
 <p>This endpoint retrieves all kittens.</p>
