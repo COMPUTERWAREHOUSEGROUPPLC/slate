@@ -131,6 +131,7 @@ https://41.78.157.169:8084/api/auth/oauth2/token
 
 ### Resource Information
 Response formats | JSON
+-------------- | -------------- 
 Request formats | JSON
 Requires Authentication? | Yes
 Rate Limited? | Yes
