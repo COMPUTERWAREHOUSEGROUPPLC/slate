@@ -319,3 +319,81 @@ POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c
 ]
 
 ```
+
+
+# Vend Query Api
+### HTTP Request
+Description: This is to query the status of vend transactions.
+Method: POST.
+Security: Bearer Token.
+
+### URL Parameters
+https://41.78.157.169:8084/api/platform/vend/query
+
+### Resource information
+Response formats | JSON
+-------------- | -------------- 
+Request formats | JSON
+Requires Authentication? | Yes
+Rate Limited? | Yes
+
+### Parameters
+Name | Required/optional | Description | Default value | Example
+-------------- | -------------- | -------------- | -------------- | --------------
+transactionReference | Required | String | | 12221t8TOO095
+
+
+
+
+> Sample Request
+POST /api/router/vend/query HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
+
+```json
+[
+   {
+    "transactionReference": "12221t8TOO095", 
+    "amountPaid": 10000, 
+    "transactionHash": "37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59", 
+    "customerUserId": "08011111111", 
+    "transactionDate": "08/02/2018 05:00:09", 
+    "vendingCode": "MTN_A"
+  }
+]
+
+```
+
+
+> Sample Request
+
+
+```json
+[
+   { "statusCode": 200, 
+   "requestSuccessful": true, 
+   "executionTime": 0, 
+   "apiErrors": { 
+     "errorCount": 0, 
+     "apiErrorList": [] }, 
+     "apiWarnings": { 
+       "warningCount": 0, 
+       "apiWarningList": [] }, 
+       "requestedCommand": "/vend/query", 
+       "responseEntity": 
+       { "headers": {}, 
+       "body": { "transactionId": "12221t8TOO095", "customerUserId": "08060075922", 
+       "amount": 10000, 
+       "email": null, 
+       "vendCode": "MTN_A", 
+       "transactionDate": "08/02/2018 05:00:09", 
+       "fufiledOn": "12/02/2018 01:25:04", 
+       "statusCode": "000", 
+       "subCode": null, 
+       "statusMessage": "transaction was successful" }, "statusCode": "OK",
+       "statusCodeValue": 200 } 
+       }
+
+]
+
+```
+
+
