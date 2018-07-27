@@ -1054,18 +1054,21 @@ Security: Bearer Token.</p>
 <p>POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json</p>
 
 <blockquote>
-<p>Sample Request
-<code>json
-[
-  {
-    &quot;transactionReference&quot;: &quot;12221t8TOO095&quot;, &quot;amountPaid&quot;: 10000, 
-    &quot;transactionHash&quot;: &quot;37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59&quot;, 
-    &quot;customerUserId&quot;: &quot;08011111111&quot;, 
-    &quot;transactionDate&quot;: &quot;08/02/2018 05:00:09&quot;, &quot;vendingCode&quot;: &quot;MTN_A&quot;
-  }
-]
-</code></p>
-
+<p>Sample Response</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"transactionReference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12221t8TOO095"</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"amountPaid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59"</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"customerUserId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08011111111"</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"transactionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08/02/2018 05:00:09"</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"vendingCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MTN_A"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<blockquote>
 <p>Sample Response
 ```json
 [
