@@ -129,6 +129,18 @@ Security : Basic Authentication (Client id and client secret will provided)
 ### URL Parameters 
 https://41.78.157.169:8084/api/auth/oauth2/token
 
+### Resource Information
+Response formats | JSON
+Request formats | JSON
+Requires Authentication? | Yes
+Rate Limited? | Yes
+
+### Parameters
+Name | Required/optional | Description | Default value | Example
+clientId | Required | Username|  | BnpS_FXkc5mTTVoY9Ze4VIoH7b80z57RY78RQ
+clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
+
+
 > Sample Request
 
 ```json
@@ -136,6 +148,15 @@ https://41.78.157.169:8084/api/auth/oauth2/token
   {
     POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name="grant_type" grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 }
+]
+```
+
+> Sample Response
+```json
+[
+  {
+    "access_token": "c7a13918-f56c-4b7f-a4c1-4ed28cbc9497", "token_type": "bearer", "expires_in": 33788, "scope": "AGENT" }
+
 ]
 ```
 
