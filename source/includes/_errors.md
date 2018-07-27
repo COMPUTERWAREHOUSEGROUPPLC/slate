@@ -16,7 +16,7 @@ Error Code | Mapping
 103 | Connection Time Out
 104 | Unregistered IP Address
 105 | A Transaction With The Ref Already Exists
-106 | I'm a teapot.
+106 | Invalid Date Format Please consult documentation for the correct format
 107 | Invalid Sub Code
 108 | Invalid Amount Paid
 109 | Invalid Transaction Hash

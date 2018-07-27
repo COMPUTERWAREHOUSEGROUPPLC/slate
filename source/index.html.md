@@ -123,7 +123,7 @@ N902| 9mobile| Data | Yes|  150MB | ₦200 - 150MB (valid for 7days)
 Description: This is where authorized agents request for access token to make use of the CWG vending API.
 
 ### HTTP Request
-Method : POST
+`POST https://41.78.157.169:8084/api/auth/oauth2/token<ID>`
 Security : Basic Authentication (Client id and client secret will provided)
 
 ### URL Parameters 
@@ -148,7 +148,7 @@ clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 >Sample Request
 
 
-    POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name="grant_type" grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--
+POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name="grant_type" grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 
 
@@ -167,8 +167,7 @@ clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 # View Agent Subscription List Api
 ### HTTP Request
 Description: This is where authorized agents get all subscribed services.
-Method: GET.
-Security: Bearer Token.
+`GET https://41.78.157.169:8084/api/platform/vend/query/subscription`
 
 ### URL Parameters
 https://41.78.157.169:8084/api/platform/vend/query/subscription
@@ -241,7 +240,7 @@ GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Autho
 # Vend Api
 ### HTTP Request
 Description: This is where users vend transactions.
-Method: POST.
+`POST https://41.78.157.169:8084/api/platform/vend`
 Security: Bearer Token.
 
 ### URL PARAMETERS
@@ -326,7 +325,7 @@ POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c
 # Vend Query Api
 ### HTTP Request
 Description: This is to query the status of vend transactions.
-Method: POST.
+`POST https://41.78.157.169:8084/api/platform/vend/query`
 Security: Bearer Token.
 
 ### URL Parameters
