@@ -19,11 +19,13 @@ search: true
 
 # Introduction
 
-Welcome to the BillsNpay vending  API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+This document contains the Steps to be taken for an Agent to be on-boarded on the Vending Management System.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-This example API documentation page was created with [Slate](https://github.com/computerwarehousegroupplc/slate). Feel free to edit it and use it as a base for your own API's documentation.
+#Steps 
+1. Fill the Agent Registration form providing the required details.
+2. Ensure that the API Documentation and Agent Subscription List have been collected.
+3. Submit the filled Agent Registration form.
+4. An email containing the Client ID and Client Secret will be sent to the Contact email address specified in the Agent Registration form.
 
 # Authentication
 
