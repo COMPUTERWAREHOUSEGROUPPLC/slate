@@ -131,9 +131,8 @@ https://41.78.157.169:8084/api/auth/oauth2/token
 
 ### Resource Information
 
-|
--------------- | -------------- 
 Response formats | JSON
+-------------- | -------------- 
 Request formats | JSON
 Requires Authentication? | Yes
 Rate Limited? | Yes
@@ -171,9 +170,8 @@ Security: Bearer Token.
 ### URL Parameters
 https://41.78.157.169:8084/api/platform/vend/query/subscription
 
-|
--------------- | -------------- 
 Response formats | JSON
+-------------- | -------------- 
 Request formats | JSON
 Requires Authentication? | Yes
 Rate Limited? | Yes
@@ -235,3 +233,87 @@ GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Autho
                    }
 
 ]
+```
+
+# Vend Api
+### HTTP Request
+Description: This is where users vend transactions.
+Method: POST.
+Security: Bearer Token.
+
+### URL PARAMETERS
+https://41.78.157.169:8084/api/platform/vend
+
+### Resource information
+Response formats | JSON
+-------------- | -------------- 
+Request formats | JSON
+Requires Authentication? | Yes
+Rate Limited? | Yes
+
+### Parameters 
+
+Name | Required/optional | Description | Default value | Example
+-------------- | -------------- | -------------- | -------------- | --------------
+transactionReference | Required | String | | 12221t8TOO095
+amountPaid | Required | Decimal | | 10000
+transactionHash | Required | String| | 37a469501fb9376133b95def4f
+customerUserId| Required |String| | 0811111111
+transactionDate| Required | String | |08/02/2018 05:00:09
+vendingCode| Required| String| | MTN_A
+
+
+### Transaction Hash
+clientId, transactionReference, customerUserId, transactionDate Hashing Algorithm is SHA-512
+
+### Sample request 
+POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
+
+
+>Sample Request
+```json
+[
+  {
+    "transactionReference": "12221t8TOO095", "amountPaid": 10000, 
+    "transactionHash": "37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59", 
+    "customerUserId": "08011111111", 
+    "transactionDate": "08/02/2018 05:00:09", "vendingCode": "MTN_A"
+  }
+]
+```
+
+
+
+> Sample Response
+```json
+[
+  {
+     "statusCode": 200, 
+     "requestSuccessful": true, 
+     "executionTime": 0, 
+     "apiErrors": { 
+       "errorCount": 0, 
+       "apiErrorList": [] 
+       }, 
+       "apiWarnings": 
+       { "warningCount": 0, 
+       "apiWarningList": [] 
+       }, 
+       "requestedCommand": "/vend", 
+       "responseEntity": 
+       { "headers": {},
+     "body": 
+     { "responseCode": "000", 
+     "responseMessage": "Transaction Received successfully", 
+     "clientId": null, 
+     "microServiceId": null, 
+     "transactionReference": "12221t8TOO095", "fullResponsePayload": null, 
+     "group": null }, 
+     "statusCode": "OK", 
+     "statusCodeValue": 200 } 
+     } 
+     
+
+  
+]
+```
