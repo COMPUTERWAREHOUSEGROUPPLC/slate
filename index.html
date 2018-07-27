@@ -1054,7 +1054,7 @@ Security: Bearer Token.</p>
 <p>POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json</p>
 
 <blockquote>
-<p>Sample Response</p>
+<p>Sample Request</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
    </span><span class="p">{</span><span class="w">
@@ -1066,42 +1066,40 @@ Security: Bearer Token.</p>
     </span><span class="s2">"vendingCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MTN_A"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
-</span><span class="p">]</span><span class="w">
+
 </span></code></pre>
 <blockquote>
-<p>Sample Response
-```json
-[
-  {
-     &quot;statusCode&quot;: 200, 
-     &quot;requestSuccessful&quot;: true, 
-     &quot;executionTime&quot;: 0, 
-     &quot;apiErrors&quot;: { 
-       &quot;errorCount&quot;: 0, 
-       &quot;apiErrorList&quot;: [] 
-       }, 
-       &quot;apiWarnings&quot;: 
-       { &quot;warningCount&quot;: 0, 
-       &quot;apiWarningList&quot;: [] 
-       }, 
-       &quot;requestedCommand&quot;: &quot;/vend&quot;, 
-       &quot;responseEntity&quot;: 
-       { &quot;headers&quot;: {},
-     &quot;body&quot;: 
-     { &quot;responseCode&quot;: &quot;000&quot;, 
-     &quot;responseMessage&quot;: &quot;Transaction Received successfully&quot;, 
-     &quot;clientId&quot;: null, 
-     &quot;microServiceId&quot;: null, 
-     &quot;transactionReference&quot;: &quot;12221t8TOO095&quot;, &quot;fullResponsePayload&quot;: null, 
-     &quot;group&quot;: null }, 
-     &quot;statusCode&quot;: &quot;OK&quot;, 
-     &quot;statusCodeValue&quot;: 200 } 
-     } </p>
+<p>Sample Response</p>
 </blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+   </span><span class="p">{</span><span class="w">
+     </span><span class="s2">"statusCode"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"requestSuccessful"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"executionTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"apiErrors"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+       </span><span class="s2">"errorCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> 
+       </span><span class="s2">"apiErrorList"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> 
+       </span><span class="p">},</span><span class="w"> 
+       </span><span class="s2">"apiWarnings"</span><span class="p">:</span><span class="w"> 
+       </span><span class="p">{</span><span class="w"> </span><span class="s2">"warningCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> 
+       </span><span class="s2">"apiWarningList"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> 
+       </span><span class="p">},</span><span class="w"> 
+       </span><span class="s2">"requestedCommand"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/vend"</span><span class="p">,</span><span class="w"> 
+       </span><span class="s2">"responseEntity"</span><span class="p">:</span><span class="w"> 
+       </span><span class="p">{</span><span class="w"> </span><span class="s2">"headers"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+     </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> 
+     </span><span class="p">{</span><span class="w"> </span><span class="s2">"responseCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"000"</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"responseMessage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Transaction Received successfully"</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"clientId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"microServiceId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"transactionReference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12221t8TOO095"</span><span class="p">,</span><span class="w"> </span><span class="s2">"fullResponsePayload"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"group"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">},</span><span class="w"> 
+     </span><span class="s2">"statusCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w"> 
+     </span><span class="s2">"statusCodeValue"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="p">}</span><span class="w"> 
+     </span><span class="p">}</span><span class="w"> 
+</span><span class="p">]</span><span class="w">
 
-<p>]
-```</p>
-<h1 id='errors'>Errors</h1>
+</span></code></pre><h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
