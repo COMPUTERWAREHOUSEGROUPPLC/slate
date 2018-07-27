@@ -248,6 +248,9 @@
                   <li>
                     <a href="#sample-request" class="toc-h2 toc-link" data-title="Sample Request">Sample Request</a>
                   </li>
+                  <li>
+                    <a href="#view-agent-subscription-list-api" class="toc-h2 toc-link" data-title="View Agent Subscription List Api">View Agent Subscription List Api</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -827,87 +830,87 @@ Rate Limited? | Yes</p>
 
 <blockquote>
 <p>Sample Response
-```json
+<code>json
 [
-  {
-    &quot;access_token&quot;: &quot;c7a13918-f56c-4b7f-a4c1-4ed28cbc9497&quot;, &quot;token_type&quot;: &quot;bearer&quot;, &quot;expires_in&quot;: 33788, &quot;scope&quot;: &quot;AGENT&quot; 
-    }</p>
+  { &quot;transactionReference&quot;: &quot;12221t8TOO096&quot;, &quot;amountPaid&quot;: 10000, 
+  &quot;transactionHash&quot;: &quot;37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a79&quot;, 
+  &quot;customerUserId&quot;: &quot;08030075922&quot;, 
+  &quot;transactionDate&quot;: &quot;08/02/2018 05:00:19&quot;, &quot;vendingCode&quot;: &quot;M302&quot; &quot;subCode&quot;:&quot;22GB&quot;
+  }
+]
+</code></p>
 </blockquote>
-
-<p>]</p>
-<pre class="highlight plaintext"><code>
-## View Agent Subscription List Api
-### HTTP Request
-Description: This is where authorized agents get all subscribed services.
+<h2 id='view-agent-subscription-list-api'>View Agent Subscription List Api</h2><h3 id='http-request-2'>HTTP Request</h3>
+<p>Description: This is where authorized agents get all subscribed services.
 Method: GET.
-Security: Bearer Token.
+Security: Bearer Token.</p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<p>https://41.78.157.169:8084/api/platform/vend/query/subscription</p>
 
-### URL Parameters
-https://41.78.157.169:8084/api/platform/vend/query/subscription
-
--------------- | -------------- 
+<p>-------------- | -------------- 
 Response formats | JSON
 Request formats | JSON
 Requires Authentication? | Yes
-Rate Limited? | Yes
+Rate Limited? | Yes</p>
+<h3 id='sample-request-2'>Sample Request</h3>
+<p>GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949</p>
 
-### Sample Request
-GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949
-
-&gt; Sample Response
+<blockquote>
+<p>Sample Response
 ```json
 [
-  { "statusCode": 200, 
-  "requestSuccessful": true, 
-  "executionTime": 0, 
-  "apiErrors": { 
-    "errorCount": 0, 
-    "apiErrorList": [] 
+  { &quot;statusCode&quot;: 200, 
+  &quot;requestSuccessful&quot;: true, 
+  &quot;executionTime&quot;: 0, 
+  &quot;apiErrors&quot;: { 
+    &quot;errorCount&quot;: 0, 
+    &quot;apiErrorList&quot;: [] 
     }, 
-    "apiWarnings": { 
-      "warningCount": 0, 
-      "apiWarningList": [] 
-      }, "requestedCommand": "/vend/query/subscription", "responseEntity": { 
-        "headers": {}, 
-        "body": { 
-          "serviceCount": 6, 
-          "subscribedServices": [ { 
-            "name": "Mtn Etop up", 
-            "vendCode": "MTN_A", 
-            "usesPreset": false, 
-            "presetAmountList": [], 
-            "presetCount": 0 },
+    &quot;apiWarnings&quot;: { 
+      &quot;warningCount&quot;: 0, 
+      &quot;apiWarningList&quot;: [] 
+      }, &quot;requestedCommand&quot;: &quot;/vend/query/subscription&quot;, &quot;responseEntity&quot;: { 
+        &quot;headers&quot;: {}, 
+        &quot;body&quot;: { 
+          &quot;serviceCount&quot;: 6, 
+          &quot;subscribedServices&quot;: [ { 
+            &quot;name&quot;: &quot;Mtn Etop up&quot;, 
+            &quot;vendCode&quot;: &quot;MTN_A&quot;, 
+            &quot;usesPreset&quot;: false, 
+            &quot;presetAmountList&quot;: [], 
+            &quot;presetCount&quot;: 0 },</p>
+</blockquote>
 
-            { "name": null, 
-            "vendCode": "MTN_D", 
-            "usesPreset": true, 
-            "presetAmountList": [ 
+<p>{ &quot;name&quot;: null, 
+            &quot;vendCode&quot;: &quot;MTN_D&quot;, 
+            &quot;usesPreset&quot;: true, 
+            &quot;presetAmountList&quot;: [ 
               { 
-                "subCode": "10GB", 
-                "description": "10Gb MTN",
-                 "amount": 1000 } ], 
-                 "presetCount": 1 }, 
-                 { "name": null, 
-                 "vendCode": "NIN_A", 
-                 "usesPreset": false, "presetAmountList": [], 
-                 "presetCount": 0 }, 
+                &quot;subCode&quot;: &quot;10GB&quot;, 
+                &quot;description&quot;: &quot;10Gb MTN&quot;,
+                 &quot;amount&quot;: 1000 } ], 
+                 &quot;presetCount&quot;: 1 }, 
+                 { &quot;name&quot;: null, 
+                 &quot;vendCode&quot;: &quot;NIN_A&quot;, 
+                 &quot;usesPreset&quot;: false, &quot;presetAmountList&quot;: [], 
+                 &quot;presetCount&quot;: 0 }, 
                  { 
-                   "name": "Glo Edata", 
-                   "vendCode": "GLO_D", 
-                   "usesPreset": false, "presetAmountList": [], "presetCount": 0 
+                   &quot;name&quot;: &quot;Glo Edata&quot;, 
+                   &quot;vendCode&quot;: &quot;GLO_D&quot;, 
+                   &quot;usesPreset&quot;: false, &quot;presetAmountList&quot;: [], &quot;presetCount&quot;: 0 
                    }, 
-                   { "name": null, "vendCode": "GLO_A", "usesPreset": false, "presetAmountList": [], "presetCount": 0 }, 
-                   { "name": null, 
-                   "vendCode": "NIN_D", 
-                   "usesPreset": false, "presetAmountList": [], "presetCount": 0 }
+                   { &quot;name&quot;: null, &quot;vendCode&quot;: &quot;GLO_A&quot;, &quot;usesPreset&quot;: false, &quot;presetAmountList&quot;: [], &quot;presetCount&quot;: 0 }, 
+                   { &quot;name&quot;: null, 
+                   &quot;vendCode&quot;: &quot;NIN_D&quot;, 
+                   &quot;usesPreset&quot;: false, &quot;presetAmountList&quot;: [], &quot;presetCount&quot;: 0 }
                    ] 
                    }, 
-                   "statusCode": "OK", "statusCodeValue": 200 
+                   &quot;statusCode&quot;: &quot;OK&quot;, &quot;statusCodeValue&quot;: 200 
                    } 
-                   }
+                   }</p>
 
-]
-</code></pre><h1 id='errors'>Errors</h1>
+<p>]</p>
+<h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
