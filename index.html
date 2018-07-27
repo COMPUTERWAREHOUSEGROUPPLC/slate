@@ -265,6 +265,29 @@
               </ul>
           </li>
           <li>
+            <a href="#vend-api" class="toc-h1 toc-link" data-title="Vend Api">Vend Api</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#http-request-3" class="toc-h2 toc-link" data-title="HTTP Request">HTTP Request</a>
+                  </li>
+                  <li>
+                    <a href="#url-parameters-3" class="toc-h2 toc-link" data-title="URL PARAMETERS">URL PARAMETERS</a>
+                  </li>
+                  <li>
+                    <a href="#resource-information-2" class="toc-h2 toc-link" data-title="Resource information">Resource information</a>
+                  </li>
+                  <li>
+                    <a href="#parameters-2" class="toc-h2 toc-link" data-title="Parameters">Parameters</a>
+                  </li>
+                  <li>
+                    <a href="#transaction-hash" class="toc-h2 toc-link" data-title="Transaction Hash">Transaction Hash</a>
+                  </li>
+                  <li>
+                    <a href="#sample-request-3" class="toc-h2 toc-link" data-title="Sample request">Sample request</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
           </li>
       </ul>
@@ -808,15 +831,21 @@ Security : Basic Authentication (Client id and client secret will provided)</p>
 <h3 id='resource-information'>Resource Information</h3>
 <table><thead>
 <tr>
+<th>Response formats</th>
+<th>JSON</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Request formats</td>
+<td>JSON</td>
 </tr>
 <tr>
+<td>Requires Authentication?</td>
+<td>Yes</td>
 </tr>
 <tr>
-</tr>
-<tr>
+<td>Rate Limited?</td>
+<td>Yes</td>
 </tr>
 </tbody></table>
 <h3 id='parameters'>Parameters</h3>
@@ -866,15 +895,21 @@ Security: Bearer Token.</p>
 
 <table><thead>
 <tr>
+<th>Response formats</th>
+<th>JSON</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Request formats</td>
+<td>JSON</td>
 </tr>
 <tr>
+<td>Requires Authentication?</td>
+<td>Yes</td>
 </tr>
 <tr>
-</tr>
-<tr>
+<td>Rate Limited?</td>
+<td>Yes</td>
 </tr>
 </tbody></table>
 <h3 id='sample-request-2'>Sample Request</h3>
@@ -934,7 +969,136 @@ Security: Bearer Token.</p>
                    </span><span class="p">}</span><span class="w">
 
 </span><span class="p">]</span><span class="w">
-</span></code></pre><h1 id='errors'>Errors</h1>
+</span></code></pre><h1 id='vend-api'>Vend Api</h1><h3 id='http-request-3'>HTTP Request</h3>
+<p>Description: This is where users vend transactions.
+Method: POST.
+Security: Bearer Token.</p>
+<h3 id='url-parameters-3'>URL PARAMETERS</h3>
+<p>https://41.78.157.169:8084/api/platform/vend</p>
+<h3 id='resource-information-2'>Resource information</h3>
+<table><thead>
+<tr>
+<th>Response formats</th>
+<th>JSON</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Request formats</td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>Requires Authentication?</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Rate Limited?</td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='parameters-2'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Required/optional</th>
+<th>Description</th>
+<th>Default value</th>
+<th>Example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>transactionReference</td>
+<td>Required</td>
+<td>String</td>
+<td></td>
+<td>12221t8TOO095</td>
+</tr>
+<tr>
+<td>amountPaid</td>
+<td>Required</td>
+<td>Decimal</td>
+<td></td>
+<td>10000</td>
+</tr>
+<tr>
+<td>transactionHash</td>
+<td>Required</td>
+<td>String</td>
+<td></td>
+<td>37a469501fb9376133b95def4f</td>
+</tr>
+<tr>
+<td>customerUserId</td>
+<td>Required</td>
+<td>String</td>
+<td></td>
+<td>0811111111</td>
+</tr>
+<tr>
+<td>transactionDate</td>
+<td>Required</td>
+<td>String</td>
+<td></td>
+<td>08/02/2018 05:00:09</td>
+</tr>
+<tr>
+<td>vendingCode</td>
+<td>Required</td>
+<td>String</td>
+<td></td>
+<td>MTN_A</td>
+</tr>
+</tbody></table>
+<h3 id='transaction-hash'>Transaction Hash</h3>
+<p>clientId, transactionReference, customerUserId, transactionDate Hashing Algorithm is SHA-512</p>
+<h3 id='sample-request-3'>Sample request</h3>
+<p>POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json</p>
+
+<blockquote>
+<p>Sample Request
+<code>json
+[
+  {
+    &quot;transactionReference&quot;: &quot;12221t8TOO095&quot;, &quot;amountPaid&quot;: 10000, 
+    &quot;transactionHash&quot;: &quot;37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59&quot;, 
+    &quot;customerUserId&quot;: &quot;08011111111&quot;, 
+    &quot;transactionDate&quot;: &quot;08/02/2018 05:00:09&quot;, &quot;vendingCode&quot;: &quot;MTN_A&quot;
+  }
+]
+</code></p>
+
+<p>Sample Response
+```json
+[
+  {
+     &quot;statusCode&quot;: 200, 
+     &quot;requestSuccessful&quot;: true, 
+     &quot;executionTime&quot;: 0, 
+     &quot;apiErrors&quot;: { 
+       &quot;errorCount&quot;: 0, 
+       &quot;apiErrorList&quot;: [] 
+       }, 
+       &quot;apiWarnings&quot;: 
+       { &quot;warningCount&quot;: 0, 
+       &quot;apiWarningList&quot;: [] 
+       }, 
+       &quot;requestedCommand&quot;: &quot;/vend&quot;, 
+       &quot;responseEntity&quot;: 
+       { &quot;headers&quot;: {},
+     &quot;body&quot;: 
+     { &quot;responseCode&quot;: &quot;000&quot;, 
+     &quot;responseMessage&quot;: &quot;Transaction Received successfully&quot;, 
+     &quot;clientId&quot;: null, 
+     &quot;microServiceId&quot;: null, 
+     &quot;transactionReference&quot;: &quot;12221t8TOO095&quot;, &quot;fullResponsePayload&quot;: null, 
+     &quot;group&quot;: null }, 
+     &quot;statusCode&quot;: &quot;OK&quot;, 
+     &quot;statusCodeValue&quot;: 200 } 
+     } </p>
+</blockquote>
+
+<p>]
+```</p>
+<h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
