@@ -256,9 +256,6 @@
                   <li>
                     <a href="#url-parameters-2" class="toc-h2 toc-link" data-title="URL Parameters">URL Parameters</a>
                   </li>
-                  <li>
-                    <a href="#sample-request" class="toc-h2 toc-link" data-title="Sample Request">Sample Request</a>
-                  </li>
               </ul>
           </li>
           <li>
@@ -886,12 +883,9 @@ Security : Basic Authentication (Client id and client secret will provided)</p>
 </tbody></table>
 
 <blockquote>
-<p>Sample Request</p>
-</blockquote>
+<p>Sample Request
+POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name=&quot;grant_type&quot; grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--</p>
 
-<p>POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name=&quot;grant_type&quot; grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--</p>
-
-<blockquote>
 <p>Sample Response</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
@@ -926,10 +920,11 @@ Security : Basic Authentication (Client id and client secret will provided)</p>
 <td>Yes</td>
 </tr>
 </tbody></table>
-<h3 id='sample-request'>Sample Request</h3>
-<p>GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949</p>
 
 <blockquote>
+<p>Sample Request
+GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949</p>
+
 <p>Sample Response</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
