@@ -1,11 +1,8 @@
 ---
-title: API Reference
+title: Vending management Agent Onboarding Guide
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+##- javascript
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
