@@ -145,10 +145,8 @@ clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 
 
 
->Sample Request
-
-
-POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name="grant_type" grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--
+> Sample Request
+>POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW Authorization: Basic Qm5wU19NTENOekpHNks4d0hub0poTlNtZVgxeGZmNXZqeDVudTpCbnBLX1gzVk1uZm8wRkhIV3R6T00xbHFuMmQxdEZFR1p5UWli ------WebKitFormBoundary7MA4YWxkTrZu0gW Content-Disposition: form-data; name="grant_type" grant_type=client_credentials ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 
 
@@ -178,8 +176,8 @@ Request formats | JSON
 Requires Authentication? | Yes
 Rate Limited? | Yes
 
-### Sample Request
-GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949
+>Sample Request
+>GET /api/router/vend/query/subscription HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc949
 
 > Sample Response
 
@@ -271,7 +269,7 @@ clientId, transactionReference, customerUserId, transactionDate Hashing Algorith
 
 
 > Sample Request
-POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
+>POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
 ```json
 [
    {
@@ -347,7 +345,7 @@ transactionReference | Required | String | | 12221t8TOO095
 
 
 > Sample Request
-POST /api/router/vend/query HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
+>POST /api/router/vend/query HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
 
 ```json
 [
