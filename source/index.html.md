@@ -123,7 +123,7 @@ N902| 9mobile| Data | Yes|  150MB | ₦200 - 150MB (valid for 7days)
 Description: This is where authorized agents request for access token to make use of the CWG vending API.
 
 ### HTTP Request
-`POST <a href> https://41.78.157.169:8084/api/auth/oauth2/token</a href><ID>`
+`POST https://41.78.157.169:8084/api/auth/oauth2/token <ID>`
 Security : Basic Authentication (Client id and client secret will provided)
 
 ### URL Parameters 
