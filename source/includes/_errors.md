@@ -1,10 +1,10 @@
 # Errors
 
 <aside class="notice">
-
+The vending  API uses the following error codes:
 </aside>
 
-The vending  API uses the following error codes:
+
 
 
 Error Code | Mapping
