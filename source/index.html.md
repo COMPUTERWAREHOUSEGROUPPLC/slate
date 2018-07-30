@@ -15,8 +15,11 @@ search: true
 ---
 
 # Introduction
-
+<aside class="notice">
 This document contains the Steps to be taken for an Agent to be on-boarded on the Vending Management System.
+</aside>
+
+
 
 #Steps 
 1. Fill the Agent Registration form providing the required details.
@@ -151,10 +154,12 @@ clientSecret | Required | Password| | BnpK_4bmZIutPzHaJqLbc6pMqJL9Iikl4RoMH
 
 ```json
 [
-  { "transactionReference": "12221t8TOO096", "amountPaid": 10000, 
+  { "transactionReference": "12221t8TOO096", 
+  "amountPaid": 10000, 
   "transactionHash": "37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a79", 
   "customerUserId": "08030075922", 
-  "transactionDate": "08/02/2018 05:00:19", "vendingCode": "M302" "subCode":"22GB"
+  "transactionDate": "08/02/2018 05:00:19", 
+  "vendingCode": "M302" "subCode":"22GB"
   }
 ]
 ```
