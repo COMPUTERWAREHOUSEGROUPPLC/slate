@@ -305,7 +305,9 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>This document contains the Steps to be taken for an Agent to be on-boarded on the Vending Management System.</p>
+<aside class="notice">
+This document contains the Steps to be taken for an Agent to be on-boarded on the Vending Management System.
+</aside>
 <h1 id='steps'>Steps</h1>
 <ol>
 <li>Fill the Agent Registration form providing the required details.</li>
@@ -886,10 +888,12 @@ POST /api/auth/uaa/api/oauth2/token HTTP/1.1 Host: 192.168.16.190:8084 Content-T
 <p>Sample Response</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w"> </span><span class="s2">"transactionReference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12221t8TOO096"</span><span class="p">,</span><span class="w"> </span><span class="s2">"amountPaid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w"> 
+  </span><span class="p">{</span><span class="w"> </span><span class="s2">"transactionReference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12221t8TOO096"</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"amountPaid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w"> 
   </span><span class="s2">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"37a469501fb9376133b95def4f340bea39278baf571797a202042a1e59b921ee15b386a29a67f8752a7acb2aaf069b411b85ffa848f7f83b6eb442d80e6a0a79"</span><span class="p">,</span><span class="w"> 
   </span><span class="s2">"customerUserId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08030075922"</span><span class="p">,</span><span class="w"> 
-  </span><span class="s2">"transactionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08/02/2018 05:00:19"</span><span class="p">,</span><span class="w"> </span><span class="s2">"vendingCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M302"</span><span class="w"> </span><span class="s2">"subCode"</span><span class="p">:</span><span class="s2">"22GB"</span><span class="w">
+  </span><span class="s2">"transactionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08/02/2018 05:00:19"</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"vendingCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M302"</span><span class="w"> </span><span class="s2">"subCode"</span><span class="p">:</span><span class="s2">"22GB"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre><h1 id='view-agent-subscription-list-api'>View Agent Subscription List Api</h1><h3 id='http-request-2'>HTTP Request</h3>
