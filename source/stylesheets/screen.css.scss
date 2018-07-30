@@ -326,6 +326,17 @@ html, body {
     clear: both;
   }
 
+
+  .content {
+    .center-column + pre {    
+      position: static;
+      float: none;
+      clear: none;
+      margin: 0 28px;
+      left: 0;
+    }
+  }
+
   &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
     margin-right: $examples-width;
     padding: 0 $main-padding;

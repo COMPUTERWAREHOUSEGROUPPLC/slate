@@ -270,8 +270,12 @@ clientId, transactionReference, customerUserId, transactionDate Hashing Algorith
 
 
 
+
+
 > Sample Request
 >POST /api/router/vend HTTP/1.1 Host: 192.168.16.190:8084 Authorization: Bearer c7a13918-f56c-4b7f-a4c1-4ed28cbc9497 Content-Type: application/json
+
+<div class="center-column"></div>
 ```json
 [
    {
