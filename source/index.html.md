@@ -60,22 +60,22 @@ M302| MTN| Data | YES| 50MB | ₦100 - 50MB (valid for 24hrs)
  | | | |  120GB | ₦20,000 - 120GB (valid for 30 days)
  A201| Airtel| Airtime| No|  - | -
  A202| Airtel| Data| Yes|  10MB | ₦50 - This Data plan gives 10MB + 10% Bonus for N50 valid for 1 day
- | | | |  50MB | ₦100 - This Data plan gives 50MB + 10% Bonus for N100 valid for 1 day
- | | | |  200MB | ₦200 - This Data plan gives 200MB + 10% Bonus for N200 valid for 3 days
- | | | |  350MB | ₦300 - This Data plan gives 350MB + 10% Bonus for N300 valid for 7 days
- | | | |  750MB | ₦500 - This Data plan gives 750MB + 10% Bonus for N500 valid for 14 days
- | | | |  1.5GB | ₦1000 - This Data plan gives 1.5GB + 10% Bonus for N1,000 and access to Social Networks for FREE valid for 30 days
- | | | |  3.5GB | ₦2000 - This Data plan gives 3.5GB + 10% Bonus for N2,000 and access to Social Networks for FREE valid for 30 days
- | | | |  5GB | ₦2500 - This Data plan gives 5GB + 10% Bonus for N2,500 and access to Social Networks for FREE valid for 30 days
- | | | |  7GB | ₦3500 - This Data plan gives 7GB + 10% Bonus for N3,500 and access to Social Networks for FREE valid for 30 days
- | | | |  9GB | ₦4000 - This Data plan gives 9GB + 10% Bonus for N4,000 and access to Social Networks for FREE valid for 30 days
- | | | |  10GB | ₦5000- This Data plan gives 10GB + 10% Bonus for N5,000 valid for 30 days
- | | | |  16GB | ₦8000 - This Data plan gives you 16GB + 10% Bonus for N8,000 valid for 30 days
- | | | |  22GB | ₦10,000 - This Data plan gives 22GB + 10% Bonus for N10,000 valid for 30 days
- | | | |  30GB | ₦15,000 - This Data plan gives 30GB + 10% Bonus for N15,000 valid for 60 days
- | | | |  50GB | ₦36000 - This Data plan gives you 50GB + 10% Bonus for N36,000 valid for 180 days
- | | | |  100GB | ₦70,000 - This Data plan gives 100GB + 10% Bonus for N70,000 valid for 365 days
- | | | |  200GB | ₦136,000 - This Data plan gives 200GB + 10% Bonus
+  | | | |  50MB | ₦100 - This Data plan gives 50MB + 10% Bonus for N100 valid for 1 day
+  | | | |  200MB | ₦200 - This Data plan gives 200MB + 10% Bonus for N200 valid for 3 days
+  | | | |  350MB | ₦300 - This Data plan gives 350MB + 10% Bonus for N300 valid for 7 days
+  | | | |  750MB | ₦500 - This Data plan gives 750MB + 10% Bonus for N500 valid for 14 days
+  | | | |  1.5GB | ₦1000 - This Data plan gives 1.5GB + 10% Bonus for N1,000 and access to Social Networks for FREE valid for 30 days
+  | | | |  3.5GB | ₦2000 - This Data plan gives 3.5GB + 10% Bonus for N2,000 and access to Social Networks for FREE valid for 30 days
+  | | | |  5GB | ₦2500 - This Data plan gives 5GB + 10% Bonus for N2,500 and access to Social Networks for FREE valid for 30 days
+  | | | |  7GB | ₦3500 - This Data plan gives 7GB + 10% Bonus for N3,500 and access to Social Networks for FREE valid for 30 days
+  | | | |  9GB | ₦4000 - This Data plan gives 9GB + 10% Bonus for N4,000 and access to Social Networks for FREE valid for 30 days
+  | | | |  10GB | ₦5000- This Data plan gives 10GB + 10% Bonus for N5,000 valid for 30 days
+  | | | |  16GB | ₦8000 - This Data plan gives you 16GB + 10% Bonus for N8,000 valid for 30 days
+   | | | |  22GB | ₦10,000 - This Data plan gives 22GB + 10% Bonus for N10,000 valid for 30 days
+   | | | |  30GB | ₦15,000 - This Data plan gives 30GB + 10% Bonus for N15,000 valid for 60 days
+  | | | |  50GB | ₦36000 - This Data plan gives you 50GB + 10% Bonus for N36,000 valid for 180 days
+  | | | |  100GB | ₦70,000 - This Data plan gives 100GB + 10% Bonus for N70,000 valid for 365 days 
+  | | | |  200GB | ₦136,000 - This Data plan gives 200GB + 10% Bonus
 N901| 9mobile| Airtime| No|  - | 
 N902| 9mobile| Data | Yes|  150MB | ₦200 - 150MB (valid for 7days)
 | | | |  1GB | ₦1000 - 1GB (valid for 30days)
